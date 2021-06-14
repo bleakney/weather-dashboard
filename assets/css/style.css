@@ -1,0 +1,29 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+header h1 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: darkslateblue;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+h1, h2, h5 {
+    font-weight: bolder;
+}
