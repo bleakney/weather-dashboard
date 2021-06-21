@@ -27,3 +27,19 @@ input {
 h1, h2, h5 {
     font-weight: bolder;
 }
+
+
+.search-history {
+    margin-top: 1rem;
+    border: none;
+    border-top: 2px solid black;
+    border-radius: 0;
+}
+
+.search-results p {
+    line-height: 2;
+}
+
+#fiveDayContainer {
+    margin-top: 1rem;
+}
