@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+
+   <!--GRID CONTAINER -->
+    <div class="container">
+        <!-- CITY SEARCH INPUT -->
+        <form id="searchForm">
+        <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+        <h2>Search for a City</h2>
+        <div class="input-group input-group-lg">
+            <input name="searchInput" type="text" class="form-control" id="searchInput" autofocus="true" placeholder="Austin">
+          </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </div>
+    </div>
+  </form>
+    <!-- SEARCH HISTORY -->
+    <div class="card search-history">
+        <div class="card-body">
+            <div class="d-grid gap-3 searchHistoryButtons">
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!-- SEARCH RESULTS -->
+        <div class="col-9">
+            <div class="card">
+                <div class="card-body search-results">
+                  <h2 class="card-title" id="cityName">Current Forecast<img id="currentWeatherIcon"/></h5>
+                  <p class="card-text" id="currentTemp">Temp: </p>
+                  <p class="card-text" id="currentWind">Wind: </p>
+                  <p class="card-text"id="currentHumidity">Humidity: </p>
+                  <p class="card-text" id="currentUV">UV Index: </p>
+                </div>
+              </div>
+
+              <!-- 5-DAY FORECAST CARDS -->
+            <div class="card" id="fiveDayContainer">
+                <div class="card-body">
+                    <h2 class="card-title">5-Day Forecast:</h2>
+                    <div class="row row-cols-1 row-cols-md-5">
+                        <div class="col">
+                          <div class="card h-100" id="forecastCard0">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <img />
+                              <p class="card-text dailyTemp">Temp: </p>
+                              <p class="card-text dailyWind">Wind: </p>
+                              <p class="card-text dailyHumidity">Humidity: </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100" id="forecastCard1">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <img />
+                              <p class="card-text dailyTemp">Temp: </p>
+                              <p class="card-text dailyWind">Wind: </p>
+                              <p class="card-text dailyHumidity">Humidity: </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100" id="forecastCard2">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <img />
+                              <p class="card-text dailyTemp">Temp: </p>
+                              <p class="card-text dailyWind">Wind: </p>
+                              <p class="card-text dailyHumidity">Humidity: </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100" id="forecastCard3">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <img />
+                              <p class="card-text dailyTemp">Temp: </p>
+                              <p class="card-text dailyWind">Wind: </p>
+                              <p class="card-text dailyHumidity">Humidity: </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100" id="forecastCard4">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <img />
+                              <p class="card-text dailyTemp">Temp: </p>
+                              <p class="card-text dailyWind">Wind: </p>
+                              <p class="card-text dailyHumidity">Humidity: </p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
