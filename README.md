@@ -5,4 +5,4 @@ This challenge was to use the OpenWeather API to create a weather app that would
 https://bleakney.github.io/weather-dashboard/
 
 ## Screenshots of deployment:
-![screenshot](./assets/images/Weather-Dashboard
+![screenshot](./assets/images/Weather-Dashboard.png
