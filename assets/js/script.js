@@ -56,6 +56,16 @@ var retrieveWeather = function (city) {
   });
 };
 
+function displayDates(){
+    for (let i = 0; i < 6; i++) {
+        // display date
+        let currentDate = moment();
+        let displayDate = currentDate.clone().add(i, "day").format("MM/DD/YY");
+        document.querySelector("#forecastCard" + i).querySelector("h5").textContent = displayDate;
+        console.log(displayDate);
+}}
+displayDates();
+
 function displayWeather(data) {
   // display weather in large current weather box
   cityNameElement.textContent = "Current Weather for " + data.list[0].name;
